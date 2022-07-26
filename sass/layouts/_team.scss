@@ -1,0 +1,90 @@
+.team {
+    background-color: var(--button-bgc-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
+
+    &__title {
+        margin-bottom: 30px;
+        margin-top: 0;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+    }
+        
+    }
+    
+    &__members {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        --items: 1;
+
+    @media screen and (min-width: 768px) {
+        --items: 2;
+    }
+        
+    @media screen and (min-width: 1200px) {
+        --items: 4;
+    }
+    }
+    
+    &__member {
+        width: 450px;
+
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+        }
+
+        background-color: var(--white-color);
+        margin-right: 30px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+    }
+        &__member:nth-child(4n) {
+            margin-right: 0;
+        }
+
+        &__member-name {
+        color: var(--title-color);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        }
+        
+        &__description {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+        }
+        
+        &__member-name {
+        margin-bottom: 10px;
+        margin-top: 0;
+        }
+        
+        &__member-position {
+        margin-bottom: 16px;
+        margin-top: 0;
+        color: var(--text-color);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        }
+}
+
+
+
+

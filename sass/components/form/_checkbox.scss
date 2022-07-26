@@ -1,0 +1,67 @@
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.form-agreement-custom {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+
+    outline: 1px solid #000000;
+    outline-offset: -1px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-checkbox:focus+.form-agreement-custom {
+    outline-color: var(--accent-color);
+    box-shadow: none;
+}
+
+.form-checkbox:checked+.form-agreement-custom {
+    background-color: var(--accent-color);
+    outline-color: var(--accent-color);
+}
+
+.form-agreement-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.71;
+
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+
+    user-select: none;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+    }
+}
+
+.icon-agreement {
+    fill: var(--white-color);
+}
+
+.agreement-link {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.71;
+
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+
+    color: var(--accent-color);
+
+@media screen and (min-width: 1200px) {
+        font-size: 14px;
+    }
+}

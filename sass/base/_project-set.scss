@@ -1,0 +1,13 @@
+.project-set {
+    display: flex;
+    flex-wrap: wrap;
+    margin: calc(-1 * var(--indent) / 2);
+    align-items: center;
+    padding: 0;
+
+    &__items {
+        flex-basis: calc((100% - var(--indent)*(var(--items) - 1))/var(--items));
+        margin: calc(var(--indent) / 2);
+    }
+}
+

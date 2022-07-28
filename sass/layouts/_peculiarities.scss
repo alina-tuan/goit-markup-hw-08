@@ -35,6 +35,7 @@
     }
     &-list {
         --items: 1;
+        align-items: baseline;
 
     @media screen and (min-width: 768px) {
             --items: 2;

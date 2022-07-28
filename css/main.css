@@ -887,7 +887,7 @@ a {
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 696px;
+  max-width: 360px;
   color: var(--white-color);
   font-weight: 900;
   font-size: 26px;
@@ -899,6 +899,7 @@ a {
 @media screen and (min-width: 1200px) {
   .hero-title {
     font-size: 44px;
+    max-width: 696px;
   }
 }
 .hero__button {
@@ -959,6 +960,9 @@ a {
 }
 .peculiarities-list {
   --items: 1;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 @media screen and (min-width: 768px) {
   .peculiarities-list {
@@ -1345,16 +1349,75 @@ a {
   }
 }
 
+.footer {
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--footer-bg-color);
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.footer-adress {
+  margin-bottom: 60px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-adress {
+    margin-right: 70px;
+    margin-bottom: 0;
+  }
+}
+.footer-block {
+  display: block;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+.footer-adress .adress {
+  margin-bottom: 9px;
+  color: var(--white-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
 .footer .logo {
   display: block;
-  font-size: 24px;
-  text-align: center;
   margin-bottom: 20px;
   color: var(--white-color);
   text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
+  font-size: 24px;
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
@@ -1363,29 +1426,27 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     font-size: 26px;
   }
 }
 
 .adress-list {
-  display: block;
-  padding-left: 0;
+  padding: 0;
   margin: 0;
-}
-@media screen and (min-width: 480px) {
-  .adress-list {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
-  }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
 }
 
 .adress-item:not(:last-child) {
-  margin-bottom: 8px;
+  margin-bottom: 9px;
 }
 
 .adress-link--light {
@@ -1393,7 +1454,9 @@ a {
 }
 
 .adress-link {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-weight: 400;
@@ -1407,16 +1470,12 @@ a {
 
 .footer-social {
   display: block;
-  margin-bottom: 60px;
-}
-@media screen and (min-width: 768px) {
-  .footer-social {
-    margin-bottom: 0;
-  }
 }
 
 .join-us {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-bottom: 20px;
   font-family: "Roboto";
   font-style: normal;
@@ -1424,14 +1483,8 @@ a {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  text-align: center;
   text-transform: uppercase;
   color: var(--white-color);
-}
-@media screen and (min-width: 1200px) {
-  .join-us {
-    text-align: start;
-  }
 }
 
 .join-list {
@@ -1477,23 +1530,11 @@ a {
 .subscribe {
   margin-left: auto;
 }
-@media screen and (min-width: 768px) {
-  .subscribe {
-    margin: 60px auto 0 auto;
-    text-align: center;
-    width: 450px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-  }
-}
 
 .subscribe-us {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -1502,26 +1543,18 @@ a {
   text-transform: uppercase;
   color: var(--white-color);
 }
-@media screen and (min-width: 480px) {
-  .subscribe-us {
-    text-align: center;
-  }
-}
 
 .subscribe-form {
-  display: block;
-}
-@media screen and (min-width: 1200px) {
-  .subscribe-form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer-email {
-  width: 100%;
-  margin-bottom: 20px;
+  width: 358px;
   height: 50px;
   padding-left: 16px;
   color: var(--white-color);
@@ -1533,11 +1566,6 @@ a {
   outline: transparent;
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-@media screen and (min-width: 1200px) {
-  .footer-email {
-    width: 358px;
-  }
 }
 .footer-email:hover, .footer-email:focus {
   border: 1px solid var(--accent-color);
@@ -1599,18 +1627,13 @@ a {
 }
 
 .subscribe-button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 10px 28px;
-  margin: 0;
+  margin-left: 12px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-@media screen and (min-width: 1200px) {
-  .subscribe-button {
-    margin-left: 12px;
-  }
 }
 
 .subscribe-button-text {

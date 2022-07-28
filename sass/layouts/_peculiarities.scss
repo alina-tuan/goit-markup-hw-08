@@ -32,6 +32,16 @@
         line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
+
+        text-align: center;
+
+        @media screen and (min-width: 768px) {
+            text-align: start;  
+        }
+        
+        @media screen and (min-width: 1200px) {
+            text-align: start;
+        }
     }
     &-list {
         --items: 1;

@@ -15,11 +15,11 @@
 
     margin-bottom: 40px;
     flex-wrap: wrap;
+    justify-content: center;
 
     @media screen and (min-width: 1200px) {
         margin-bottom: 50px;
         padding: 0;
-        justify-content: center;
     }
     
     &-button {

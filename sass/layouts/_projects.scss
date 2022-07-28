@@ -12,9 +12,7 @@
 }
 
 .project-set__items {
-    width: 450px;
-
-    flex-basis: calc((100% - var(--indent) * var(--items)) / var(--items));
+    flex-basis: calc((100% - var(--indent)*(var(--items) - 1))/var(--items));
     margin: calc(var(--indent) / 2);
 }
 

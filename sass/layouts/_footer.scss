@@ -9,12 +9,21 @@
     }
 
     &-adress {
-        margin-bottom: 60px;
-        text-align: center;
-        justify-content: center;
+        @media screen and (min-width: 480px) {
+            margin-bottom: 60px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        @media screen and (min-width: 768px) {
+                margin-right: auto;
+                margin-bottom: 0;
+            }
+        }
 
         @media screen and (min-width: 1200px) {
             margin-right: 70px;
+            margin-bottom: 0;
         }
     }
 
@@ -22,12 +31,16 @@
         display: block;
         align-items: center;
 
-    @media screen and (min-width: 1200px) {
-        display: flex;
-        align-items: baseline;
-    }
+        @media screen and (min-width: 768px) {
+            display: flex;
+        }
+
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            align-items: baseline;
+        }
             
-    }
+    
         &-adress .adress {
             margin-bottom: 9px;
             color: var(--white-color);
@@ -38,9 +51,8 @@
             letter-spacing: 0.03em;
             text-decoration: none;
         }
-
-}
-
+        
+    }
 
 .footer .logo {
     display: block;
@@ -48,10 +60,10 @@
     text-align: center;
 
 
-@media screen and (min-width: 1200px) {
-    display: flex;
-    font-size: 26px;
-}
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        font-size: 26px;
+    }
     
     margin-bottom: 20px;
     color: var(--white-color);
@@ -67,11 +79,16 @@
 
 .adress-list {
     display: block;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    
     padding-left: 0;
     margin: 0;
+
+
+    @media screen and (min-width: 480px) {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
 }
 
 .adress-item:not(:last-child) {
@@ -102,6 +119,10 @@
 .footer-social {
     display: block;
     margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
 }
 
 .join-us {
@@ -154,15 +175,21 @@
 
 .subscribe {
     margin-left: auto;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    
+
+    @media screen and (min-width: 768px) {
+        margin: 60px auto 0 auto;
+        text-align: center;
+        width: 450px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 .subscribe-us {
     display: block;
     margin-bottom: 20px;
-    text-align: center;
 
     font-weight: 700;
     font-size: 14px;
@@ -171,12 +198,21 @@
     text-transform: uppercase;
 
     color: var(--white-color);
+
+    @media screen and (min-width: 480px) {
+        text-align: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+
 }
 
 .subscribe-form {
-    @media screen and (min-width: 1200px) {
-            display: flex;
-    }
+    // @media screen and (min-width: 1200px) {
+    //         display: flex;
+    // }
 
     display: block;
     

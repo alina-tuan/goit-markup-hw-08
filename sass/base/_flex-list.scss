@@ -1,0 +1,11 @@
+.flex-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--indent);
+        align-items: center;
+        padding: 0;
+
+    &__item {
+        flex-basis: calc((100% - var(--indent)*(var(--items) - 1))/var(--items));
+    }
+}

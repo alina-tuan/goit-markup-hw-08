@@ -1,8 +1,14 @@
 .project-set {
     display: block;
 
+    @media screen and (min-width: 768px) {
+            display: flex;
+            --items: 2;
+    }
+
     @media screen and (min-width: 1200px) {
         display: flex;
+        --items: 3;
     }
 
     flex-wrap: wrap;
@@ -14,6 +20,15 @@
 .project-set__items {
     flex-basis: calc((100% - var(--indent)*(var(--items) - 1))/var(--items));
     margin: calc(var(--indent) / 2);
+    max-width: 450px;
+
+    @media screen and (min-width: 768px) {
+        max-width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+             max-width: 370px;
+    }
 }
 
 .project-title {

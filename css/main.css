@@ -40,7 +40,7 @@ body {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -1212,11 +1212,20 @@ a {
           align-items: center;
   padding: 0;
 }
+@media screen and (min-width: 768px) {
+  .project-set {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    --items: 2;
+  }
+}
 @media screen and (min-width: 1200px) {
   .project-set {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    --items: 3;
   }
 }
 
@@ -1224,6 +1233,17 @@ a {
   -ms-flex-preferred-size: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
       flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
   margin: calc(var(--indent) / 2);
+  max-width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .project-set__items {
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project-set__items {
+    max-width: 370px;
+  }
 }
 
 .project-title {
@@ -1297,14 +1317,21 @@ a {
   margin-bottom: 40px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .filter {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 @media screen and (min-width: 1200px) {
   .filter {
     margin-bottom: 50px;
     padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 .filter-button {

@@ -12,14 +12,16 @@
     }
 
     flex-wrap: wrap;
-    margin: calc(-1 * var(--indent) / 2);
+    // margin: calc(-1 * var(--indent) / 2);
     // align-items: center;
     padding: 0;
+    gap: var(--indent);
 }
 
 .project-set__items {
     flex-basis: calc((100% - var(--indent)*(var(--items) - 1))/var(--items));
-    margin: calc(var(--indent) / 2);
+    // margin: calc(var(--indent) / 2);
+    
     max-width: 450px;
     --indent: 30px;
 

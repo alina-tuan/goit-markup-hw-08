@@ -1,22 +1,26 @@
 .project-set {
-    display: block;
+    display: flex;
+    flex-direction: column;
     --items: 1;
 
+    padding: 0;
+    gap: var(--indent);
+    flex-wrap: wrap;
+
     @media screen and (min-width: 768px) {
-            display: flex;
-            --items: 2;
+        display: flex;
+        flex-direction: row;
+        --items: 2;
     }
 
     @media screen and (min-width: 1200px) {
         display: flex;
+        flex-direction: row;
         --items: 3;
     }
 
-    flex-wrap: wrap;
     // margin: calc(-1 * var(--indent) / 2);
     // align-items: center;
-    padding: 0;
-    gap: var(--indent);
 }
 
 .project-set__items {
@@ -24,7 +28,6 @@
     // margin: calc(var(--indent) / 2);
     
     max-width: 450px;
-    --indent: 30px;
 
     @media screen and (min-width: 768px) {
         max-width: 354px;

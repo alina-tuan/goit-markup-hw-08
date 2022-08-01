@@ -13,7 +13,10 @@
     }
 
     &__list {
-
+        @media screen and (max-width: 479px) {
+            --items: 2;
+            --indent: 30px;
+    }
         @media screen and (min-width: 480px) {
             --items: 2;
             --indent: 30px;
@@ -27,14 +30,6 @@
             --indent: 30px;
         }
     }
-    &__item {
-
-    @media screen and (max-width: 767px) {
-            width: calc((100% - 60px)/2);
-        // max-width: 210px;
-        // height: 92px;
-    }
-}
         
     // &__item:not(:last-child) {
     //     margin-right: 15px;

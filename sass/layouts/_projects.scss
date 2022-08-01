@@ -1,5 +1,6 @@
 .project-set {
     display: block;
+    --items: 1;
 
     @media screen and (min-width: 768px) {
             display: flex;
@@ -30,7 +31,7 @@
     }
 
     @media screen and (min-width: 1200px) {
-             max-width: 370px;
+        max-width: 370px;
     }
 }
 .project-link {
@@ -83,7 +84,7 @@
 
 .border {
     box-sizing: border-box;
-    width: 450px;;
+    width: 100%;
     padding: 24px 20px;
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
